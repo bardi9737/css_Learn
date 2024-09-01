@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8rem;
+    padding: 2rem 3rem;
+    background-color: rgb(232, 189, 189);
+}
+
+
+.profile-card {
+    display: flex;
+
+    align-items: center;
+}
+
+
+
+.profile-card--img {
+    height: 20rem;
+    width: 17rem;
+    border-radius: 60%;
+    object-fit: cover;
+}
+
+.profile-card--name {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+.profile-card--rule {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(102, 80, 80);
+}
