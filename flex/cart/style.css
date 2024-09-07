@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.card {
+    width: 50rem;
+    margin: auto;
+    box-shadow: 2px 3px 25px 2px lightpink;
+    padding: 3rem 5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+    ;
+}
+
+.card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-price {
+    align-self: flex-start;
+    font-weight: bold;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    background-color: cadetblue;
+}
+
+.card-link {
+    align-self: flex-end;
+    text-decoration: none;
+    /* border: 1px solid lightblue; */
+    color: rgb(0, 0, 0);
+    background-color: rgb(2, 89, 89);
+    border-radius: 2rem;
+    padding: 0.9rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-introduction {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-descriptiion {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
