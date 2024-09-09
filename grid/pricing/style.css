@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%
+}
+
+li {
+    list-style: none;
+}
+
+.price-posts {
+    display: grid;
+    grid-template-columns: repeat(4, 25rem);
+    gap: 2rem;
+
+    height: 100vh;
+
+    place-content: center space-between;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post {
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 2.3rem;
+    border-radius: 0.8rem;
+
+    display: grid;
+    row-gap: 2rem;
+
+     
+}
+
+.post-name {
+    display: grid;
+    row-gap: 2rem;
+}
+
+.post-name h3 {
+    font-size: 1.5rem;
+}
+
+.post-name p {
+    font-size: 1rem;
+    color: hsla(0 0% 0% / 0.7);
+}
+
+.post-price {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.two-price {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.two-price h2 {
+    font-size: 2rem;
+}
+
+.price-card {
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: line-through 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.post-price p {
+    font-size: 1rem;
+}
+
+.post-price a {
+    text-decoration: none;
+    border-radius: 0.8rem;
+    background-color: cornflowerblue;
+    color: white;
+    justify-self: start;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+
+.post-table ul {
+    display: grid;
+    gap: 1rem 0;
+}
+
+.post-table ul li {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.3);
+}
+.fa-check {
+    color: lightgreen;
+    font-size: 1rem;
+}
+
+.fa-xmark {
+    color: lightcoral;
+    font-size: 1rem;
+}
