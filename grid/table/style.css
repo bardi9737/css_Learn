@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.table {
+    width: 40rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    box-shadow: 3px 2px 20px 4px hsla(0, 55%, 54%, 0.5);
+    border-radius: 1rem;
+}
+
+.table > div {
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.price1 {
+    grid-column: 1 / 3;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cornflowerblue;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: cornsilk;
+}
+
+.price1 h2 {
+    font-size: 2rem;
+
+}
+
+.price2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: coral;
+    border-bottom-left-radius: 1rem;
+    color: cornsilk;
+}
+
+.price2 a {
+    text-decoration: none;
+    border-radius: 1rem;
+    background-color: rgb(160, 137, 95);
+    padding: 1.5rem 1.5rem;
+    justify-self: center;
+    color: cornsilk;
+}
+
+li {
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color: cornsilk;
+}
+
+.price3 {
+    background-color: violet;
+    font-family: Arial, Helvetica, sans-serif;
+   border-bottom-right-radius: 1rem;
+}
+
+.list {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.h2 {
+    font-size: 1.5rem;
+    color: white;
+}
