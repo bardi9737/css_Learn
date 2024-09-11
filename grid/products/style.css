@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.price-gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 45rem);
+    grid-template-rows: repeat(2, min-content);
+
+    grid-auto-flow: row;
+    grid-auto-flow: column;
+
+    padding: 2rem;
+}
+
+.gallery-card {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 5.5rem);
+}
+
+.gallery-image {
+    grid-column: 1 / -1;
+    grid-row: 1 / span 4;
+}
+
+.gallery-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery-name {
+    grid-column: 1 / span 2;
+    grid-row: 5 / 6;
+
+    align-self: end;
+    font-size: 2rem;
+}
+
+.gallery-rating {
+    grid-column: 1 / span 2;
+    grid-row: 6 / 7;
+
+    color: orange;
+}
+
+.gallery-price {
+    grid-column: 4 / 5;
+    grid-row: 5 / 6;
+
+    align-self: end;
+    justify-self: center;
+}
