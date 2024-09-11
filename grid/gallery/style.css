@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sign-page {
+    display: grid;
+    grid-template-columns: repeat(6, 15rem);
+    grid-template-areas: 
+    "logo logo logo mini mini mini"
+    "para para para title title title"
+    "img img img email email email"
+    "img img img password password password"
+    "img img img submit submit submit"
+    "img img img google google google"
+    "img img img sign-in sign-in sign-in";
+
+    gap: 2rem 3rem;
+    align-items: center;
+    place-content: center;
+
+    padding: 4rem;
+}
+
+.logo {
+    grid-area: logo;
+
+    justify-self: center;
+}
+
+.logo img {
+    height: 5rem;
+}
+
+.para {
+    grid-area: para;
+    text-align: center;
+}
+
+
+.sign-up-img {
+    grid-area: img
+}
+
+.sign-up-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mini {
+    grid-area: mini;
+
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.title {
+    grid-area: title;
+
+    font-size: 3.2rem;
+}
+
+.email-fieldest,
+.password-fieldest {
+    font-size: 2rem;
+
+
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+}
+
+
+
+.email-fieldest {
+    grid-area: email;
+
+    border: none;
+}
+
+.password-fieldest {
+    grid-area: password;
+    border: none;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    border: none;
+    outline: none;
+    background: none;
+
+    font-size: 2rem;
+
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+}
+
+
+input[type="email"],
+input[type="password"] {
+    border: 1px solid lightgrey;
+
+}
+
+
+
+input[type="submit"] {
+    grid-area: submit;
+
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+
+.google-sign-up {
+    grid-area: google;
+    background-color:rgba(199, 228, 228, 0.716);
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+    color: blueviolet;
+   
+}
+
+.google-sign-up,
+.sign-in {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.sign-in {
+    grid-area: sign-in ;
+}
+
+.sign-in p {
+    color: darkorchid;
+}
