@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="general-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+     crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="header"> 
+      <div class="header__meta">
+        <form class="header__meta--form">
+          <fieldset>
+            <label for="language">language</label>
+
+            <select name="language">
+              <option>english</option>
+              <option>french</option>
+              <option>turkish</option>
+              <option>arabic</option>
+              <option>spanish</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <label for="currency">currency</label>
+
+            <select name="currency">
+              <option>USDT</option>
+              <option>EURO</option>
+              <option>GBP</option>
+            </select>
+          </fieldset>
+        </form>
+
+        <ul class="header__meta--links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Order tracking</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="header__categories">
+        <div>
+          <a href="#">EL</a>
+
+          <form class="header__categories--form">
+            <select name="categories">
+              <option>all categories</option>
+              <option>all categories</option>
+              <option>all categories</option>
+              <option>all categories</option>
+              <option>all categories</option>
+              <option>all categories</option>
+            </select>
+
+            <input type="search" placeholder="i'm shopping for ....">
+
+            <input type="submit" value="search">
+          </form>
+        </div>
+
+        <div>
+          <div class="header__categories--favorites">
+            <div>
+              <i class="fa-solid fa-heart"></i>
+              <span>3</span>
+            </div>
+
+            <div>
+              <a href="#">favorites</a>
+              <a href="#">my wishlist</a>
+            </div>
+          </div>
+
+          <div class="header__categories--login">
+            <div>
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span>1</span>
+            </div>
+
+            <div>
+              <a href="#">login</a>
+              <a href="#">my account</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__nav--list">
+        <li><a href="#">womens</a></li>
+        <li><a href="#">mens</a></li>
+        <li><a href="#">accessories</a></li>
+        <li><a href="#">kids</a></li>
+        <li><a href="#">more items</a></li>
+        </ul>
+
+        <p class="header__nav--call">
+          <i class="fa-solid fa-phone"></i> Need help? 09335419737
+
+        </p>
+      </nav>
+    </header>
+
+</body>
+</html> 

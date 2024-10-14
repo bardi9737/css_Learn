@@ -1,0 +1,120 @@
+.header {
+    background-color: #3340a3;
+    padding: 3rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header__meta,
+.header__categories,
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__meta,
+.header__categories {
+    border-bottom: 1px solid rgba(220, 220, 220, 0.5);
+    padding: 3rem;
+} 
+
+.header__meta--form,
+.header__meta--form fieldset,
+.header__meta--links,
+.header__nav--list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+select,
+input[type="submit"] {
+    color: #fff;
+    border: none;
+    background-color: #3442b2;
+    padding: 1rem 2rem;
+}
+
+li a {
+    color: #fff;
+    font-weight: 500;
+}
+
+div a {
+    color: #fff;
+    font-weight: 500;
+}
+
+.header__categories--form {
+    flex-grow: 1;
+}
+
+ .header__categories--favorites {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.header__categories--login {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__categories > div {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* ::placeholder {
+    color: #fff;
+} */
+
+.header__categories > div:first-child {
+    width: 100%;
+}
+
+.header__categories--form input[type=search] {
+    width: 45%;
+    background-color: white;
+}
+
+.header__categories--favorites a,
+.header__categories--login a {
+    font-size: 20px;
+    padding: 0;
+}
+
+
+.header__categories--favorites,
+.header__categories--login {
+    display: flex;
+    /* align-items: center; */
+}
+
+.header__categories--favorites > div:first-child span,
+.header__categories--login > div:first-child span {
+    padding: 0 0.5rem;
+    position: absolute;
+    top: 17rem;
+    
+    font-size: 1rem;
+    background-color: #fff;
+    color: #3442b2;
+    border-radius: 50%;
+}
+
+
+.header__categories--favorites > div:first-child i,
+.header__categories--login > div:first-child i {
+    font-size: 2rem;
+}
+
+.fa`-phone {
+    border-radius: 2rem;
+    background-color: #3442b2;
+    color: #fff;
+
+}
