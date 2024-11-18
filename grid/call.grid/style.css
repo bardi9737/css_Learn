@@ -1,0 +1,52 @@
+.collection {
+display: grid;
+
+grid-template-columns: repeat(10, 1fr);
+grid-template-rows: 40rem;
+padding: 3rem;
+
+}
+.collection__content {
+    display: grid;
+    gap: 1rem;
+    padding: 3rem;
+    background-color: rgb(2, 2, 40);
+    color: white;
+    border-top-left-radius: 1rem;
+    grid-column: 1 / span 5;
+    border-bottom-left-radius: 1rem;
+    grid-row: 1 / 2;
+    clip-path: polygon(0% 0%, 100% 0, 85% 100%, 0% 100%);
+}
+
+.collection__content--title {
+    align-self: end;
+    line-height: 1;
+}
+
+.collection__content--title span {
+    display: block;
+    font-weight: 100;
+
+}
+.collection__content--para {
+    align-self: center;
+}
+
+.collection__content--link {
+    background-color: aqua;
+    color: rgb(9, 8, 8);
+
+    place-self: start;
+}
+
+.collection__img img {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.collection__img {
+
+    grid-column: 5 / span4;
+    grid-row: 1 / 2;
+} 
